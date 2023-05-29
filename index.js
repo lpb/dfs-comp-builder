@@ -14,12 +14,12 @@ files.forEach(filename => {
     disksArray.push(baseDiskName);
 
     //create destination dir
-    fs.mkdirSync(baseExtractDir + baseDiskName, {
-        recursive: true
-    }, (err) => {});
+    fs.mkdirSync(baseExtractDir + baseDiskName, { recursive: true }, (err) => {
+        if (err) throw err
+    });
 
     //extract files from diskimages
-    execSync('bbcim.exe', ["-e", baseDisksDir + filename]);
+    execSync('bbcim.exe', ["-e", baseDisksDir + filename]); //requires use of third-party .exe
 
     //manipluate extracted files
     var extractedFiles = fs.readdirSync(baseDisksDir).filter(fn => fn.startsWith(filename + '.'));
