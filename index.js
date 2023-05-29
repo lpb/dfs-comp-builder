@@ -1,6 +1,5 @@
 const fs = require('fs');
 const execSync = require('child_process').execFileSync;
-const glob = require('glob');
 
 const assetDir = './assets/';
 const baseDisksDir = assetDir + 'disks/';
@@ -22,15 +21,18 @@ files.forEach(filename => {
     //extract files from diskimages
     execSync('bbcim.exe', ["-e", baseDisksDir + filename]);
 
+    //manipluate extracted files
     var extractedFiles = fs.readdirSync(baseDisksDir).filter(fn => fn.startsWith(filename + '.'));
     var keptFiles = [];
     var keptSizes = [];
     extractedFiles.forEach(exfilename => {
+        //we don't want BOOT or cat files
         if (exfilename.endsWith('$.!BOOT') || exfilename.endsWith('$.!BOOT.inf') || exfilename.endsWith('.cat')) {
             fs.unlinkSync(baseDisksDir + exfilename, function (err) {
                 if (err) throw err
             });
         } else {
+            //analyse and store all other files
             var srcName = baseDisksDir + exfilename;
             if (!srcName.endsWith('.inf')) {
                 var fileStats = fs.statSync(srcName);
@@ -39,10 +41,11 @@ files.forEach(filename => {
             }
             var destName = baseExtractDir + baseDiskName + '/' + exfilename.replace(filename + '.', '');
             fs.renameSync(srcName, destName);
-            
+
         }
     });
 
+    //store this disk's extracted files info.
     disksJsonData.push({
         name: baseDiskName,
         fileCount: keptFiles.length,
@@ -51,7 +54,7 @@ files.forEach(filename => {
     });
 });
 
-
+//create json file with disk info in it.
 let jsonData = JSON.stringify(disksJsonData);
 fs.writeFileSync(baseExtractDir + 'disks.json', jsonData, err => {
     if (err) {
@@ -59,16 +62,3 @@ fs.writeFileSync(baseExtractDir + 'disks.json', jsonData, err => {
         return
     }
 });
-
-
-
-
-
-// function deleteFile(file) {
-//     return new Promise((resolve, reject) => {
-//         fs.unlink(file, (err) => {
-//             if (err) reject(err);
-//             resolve(`Deleted ${file}`)
-//         })
-//     })
-// }
