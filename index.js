@@ -4,17 +4,36 @@ const execSync = require('child_process').execFileSync;
 const assetDir = './assets/';
 const baseDisksDir = assetDir + 'disks/';
 const baseExtractDir = assetDir + 'extract/';
+const datFileDir = assetDir + 'publishers/';
 
 let disksArray = [];
 let disksJsonData = [];
+let compDataArray = [];
 
+
+//read in config files for desired publisher combinations
+let compFiles = fs.readdirSync(datFileDir);
+compFiles.forEach(compTxtFile => {
+    let compDataFile = fs.readFileSync(datFileDir + compTxtFile).toString('utf-8');
+    let newPubArrayData = compDataFile.split("\n");
+    newPubArrayData.forEach(function(gameName,index) {
+        newPubArrayData[index] = gameName.replaceAll(' ','').replaceAll('\'','');
+    });
+    compDataArray.push(newPubArrayData);
+});
+
+
+
+//manipulate archives diskimages
 let files = fs.readdirSync(baseDisksDir).filter(fn => fn.endsWith('.ssd'));
 files.forEach(filename => {
     let baseDiskName = filename.replace('.ssd', '');
     disksArray.push(baseDiskName);
 
     //create destination dir
-    fs.mkdirSync(baseExtractDir + baseDiskName, { recursive: true }, (err) => {
+    fs.mkdirSync(baseExtractDir + baseDiskName, {
+        recursive: true
+    }, (err) => {
         if (err) throw err
     });
 
@@ -27,7 +46,7 @@ files.forEach(filename => {
     var keptSizes = [];
     extractedFiles.forEach(exfilename => {
         //we don't want BOOT or cat files
-        if (exfilename.endsWith('$.!BOOT') || exfilename.endsWith('$.!BOOT.inf') || exfilename.endsWith('.cat')) {
+        if (exfilename.endsWith('.cat')) {
             fs.unlinkSync(baseDisksDir + exfilename, function (err) {
                 if (err) throw err
             });
