@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "csvtojson": "^2.0.10",
     "glob": "^10.2.6"
   }
 }
