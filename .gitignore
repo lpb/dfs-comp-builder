@@ -1,3 +1,5 @@
 /node_modules
-/assets/disks/*.ssd
+/assets/disks
 /assets/extract
+/export
+/temp
