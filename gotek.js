@@ -16,7 +16,7 @@ let compilationJsonData = [];
 let themes = [];
 let gotekDiskNames = "DSKA";
 let dataChunk = "";
-let basicLineNumber = 680;
+let basicLineNumber = 810;
 let compilationNumber = 1;
 
 const numberArray = ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten'];
@@ -42,9 +42,9 @@ csvtojson({
     .then((jsonObj) => {
         compilationJsonData = jsonObj;
         dataChunk = "";
-        basicLineNumber = 730;
+        basicLineNumber = 810;
 
-        for (i = 1; i <= 512; i++) {
+        for (i = 1; i <= 128; i++) {
 
             //get entries for specific compilation
             let compFilters = {
@@ -60,10 +60,10 @@ csvtojson({
 
                 //find games from this compilation
                 let gameFilters = {
-                    name: thisGame.title.replaceAll(' ', '').replaceAll('\'', ''),
+                    name: thisGame.title.replaceAll(' ', '').replaceAll('\'', '').replaceAll('-', '').replaceAll('_', ''),
                     publisher: thisGame.publisher.replaceAll(' ', '').replaceAll('\'', ''),
                 };
-                gameData = disksJsonData.filter(item => Object.keys(gameFilters).every(key => item[key] === gameFilters[key]))[0];
+                gameData = disksJsonData.filter(item => Object.keys(gameFilters).every(key => item[key].toLowerCase() === gameFilters[key].toLowerCase()))[0];
 
                 //move game files to compilation disk
                 if (gameData) {
@@ -74,6 +74,9 @@ csvtojson({
                             console.log("-a", thisDisk, filename);
                         }
                     });
+                } else {
+                    console.log(gameFilters);
+                    process.exit();
                 }
             });
 
@@ -82,7 +85,7 @@ csvtojson({
             compNameBuild = gotekDiskNames + zeroPad(i, 4);
             if (doDisks) {
                 execSync('bbcim.exe', ["-a", exportDir + compNameBuild + "_0.ssd", "./assets/basic/din/$.!BOOT"]);
-                execSync('bbcim.exe', ["-a", exportDir + compNameBuild + "_0.ssd", "./assets/basic/din/$.din"]);
+                // execSync('bbcim.exe', ["-a", exportDir + compNameBuild + "_0.ssd", "./assets/basic/din/$.din"]);
             }
 
             //combine both (if exists) ssd into dsd

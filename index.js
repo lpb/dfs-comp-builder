@@ -24,7 +24,7 @@ const doDisks = true;
 //read in config files for desired publisher combinations
 csvtojson({
         noheader: true,
-        headers: ['title', 'publisher', 'program', 'compilation', 'side', 'method']
+        headers: ['title', 'publisher', 'program', 'compilation', 'side', 'method', 'menutitle']
     })
     .fromFile(datPubFile)
     .then((jsonObj) => {
@@ -210,12 +210,16 @@ csvtojson({
                 let compGameCount = volume.content.size0 + volume.content.size2;
 
                 //create DATA statements for games list
-                let basicLineNumber = 730;
+                let basicLineNumber = 810;
                 let dataChunk = "";
                 let dataBit = "";
                 volume.content.all.forEach(gameData => {
                     // console.log(gameData.title);
-                    dataBit = "DATA " + gameData.title + "," + gameData.program + "," + gameData.compilation + "," + gameData.side + "," + gameData.method;
+                    if(gameData.menutitle) {
+                        dataBit = "DATA " + gameData.menutitle + "," + gameData.program + "," + gameData.compilation + "," + gameData.side + "," + gameData.method;
+                    } else {
+                        dataBit = "DATA " + gameData.title + "," + gameData.program + "," + gameData.compilation + "," + gameData.side + "," + gameData.method;
+                    };
                     dataChunk += basicLineNumber + dataBit + "\n";
                     basicLineNumber += 10;
                 });
