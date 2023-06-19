@@ -2,6 +2,6 @@
 
 WIP
 
-A Node/JS Tool to manage a large number of extracted Acorn SSD disk images and recombine into different combinations.
+A Node/JS Tool to manage a large number of extracted Acorn SSD/DSD disk images and recombine into different combinations for both single disk and gotek based compilations.
 
-Relies on the use of the bbcim.exe executable.
+Currently relies on the use of the bbcim.exe and basicrool.exe executables.
