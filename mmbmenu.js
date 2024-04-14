@@ -156,7 +156,7 @@ csvtojson({
         let diskCompFiles = fs.readdirSync(exportDir).filter(fn => fn.endsWith('.ssd'));
         diskCompFiles.forEach(filename => {
             let partialFilename = filename.slice(0, -6);
-            let slotNumber = partialFilename.slice(-3);
+            // let slotNumber = partialFilename.slice(-3);
 
             if ((fs.existsSync(exportDir + partialFilename + "_0.ssd"))) {
                 if (doDisks) {
@@ -172,7 +172,7 @@ csvtojson({
                 }
             } else if (fs.existsSync(exportDir + partialFilename + "_0.ssd")) {
                 fs.renameSync(exportDir + partialFilename + "_0.ssd", exportDir + partialFilename + ".ssd");
-                execSync('mmbexplorer.exe', ["add", exportDir + "reMastered.mmb", exportDir + partialFilename + ".ssd", slotNumber]);
+                //execSync('mmbexplorer.exe', ["add", exportDir + "reMastered.mmb", exportDir + partialFilename + ".ssd", slotNumber]);
             }
 
         });

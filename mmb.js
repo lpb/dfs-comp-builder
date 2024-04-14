@@ -19,9 +19,8 @@ let dataChunk = "";
 let basicLineNumber = 810;
 let slotNumber = 1;
 
-let compDiskStart = 001;
+let compDiskStart = 1;
 let compDiskEnd = 256;
-let maxSlots = 288;
 
 const zeroPad = (num, places) => String(num).padStart(places, '0');
 
@@ -35,13 +34,10 @@ themes = JSON.parse(themesData);
 let disksData = fs.readFileSync(disksJsonFile, 'utf8', );
 disksJsonData = JSON.parse(disksData);
 
-//create new mmb file
-execSync('mmbexplorer.exe', ["create", exportDir + "reMastered.mmb", maxSlots]);
-
 //read in config files for desired publisher combinations
 csvtojson({
         noheader: true,
-        headers: ['title', 'publisher', 'program', 'compilation', 'side', 'method','alttitle','type','shortpub','slot']
+        headers: ['title', 'publisher', 'program', 'compilation', 'side', 'method', 'alttitle', 'type', 'shortpub', 'slot']
     })
     .fromFile(datPubFile)
     .then((jsonObj) => {
@@ -59,7 +55,7 @@ csvtojson({
             // console.log(thisCompilation);
 
             thisCompilation.forEach(thisGame => {
-                if(thisGame.type!='dsd') { //temp HACK for dsd images
+                if (thisGame.type != 'dsd') { //temp HACK for dsd images
                     //gather info for compilation disk
                     compNameBuild = gotekDiskNames + zeroPad(thisGame.slot, 4);
                     thisDisk = exportDir + compNameBuild + ".ssd";
@@ -94,7 +90,6 @@ csvtojson({
 
             if (doDisks) {
                 execSync('bbcim.exe', ["-a", exportDir + compNameBuild + ".ssd", "./assets/basic/din/$.!BOOT"]);
-                execSync('mmbexplorer.exe', ["add", exportDir + "reMastered.mmb", exportDir + compNameBuild + ".ssd", i]);
             }
 
         }

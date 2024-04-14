@@ -19,7 +19,7 @@ let dataChunk = "";
 let basicLineNumber = 810;
 let compilationNumber = 1;
 
-let compDiskStart = 001;
+let compDiskStart = 1;
 let compDiskEnd = 192;
 
 const zeroPad = (num, places) => String(num).padStart(places, '0');
@@ -37,7 +37,7 @@ disksJsonData = JSON.parse(disksData);
 //read in config files for desired publisher combinations
 csvtojson({
         noheader: true,
-        headers: ['title', 'publisher', 'program', 'compilation', 'side', 'method','alttitle','type','shortpub','slot']
+        headers: ['title', 'publisher', 'program', 'compilation', 'side', 'method', 'alttitle', 'type', 'shortpub', 'slot']
     })
     .fromFile(datPubFile)
     .then((jsonObj) => {
@@ -55,7 +55,7 @@ csvtojson({
             // console.log(thisCompilation);
 
             thisCompilation.forEach(thisGame => {
-                if(thisGame.type!='dsd') { //temp HACK for dsd images
+                if (thisGame.type != 'dsd') { //temp HACK for dsd images
                     //gather info for compilation disk
                     compNameBuild = gotekDiskNames + zeroPad(thisGame.compilation, 4);
                     thisDisk = exportDir + compNameBuild + "_" + thisGame.side + ".ssd";
