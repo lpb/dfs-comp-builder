@@ -175,12 +175,14 @@ csvtojson({
                             // console.log(gameFilteredArray[0].allFiles);
                             // write the games files to the new disk image. 
                             // TODO CHECK why null elements in this array.
-                            gameFilteredArray.allFiles.forEach(filename => {
-                                // console.log(filename);
-                                if (doDisks) {
-                                    execSync('bbcim.exe', ["-a", compNameBuild, filename]);
-                                }
-                            });
+                            if(gameFilteredArray.allFiles) {
+                                gameFilteredArray.allFiles.forEach(filename => {
+                                    // console.log(filename);
+                                    if (doDisks) {
+                                        execSync('bbcim.exe', ["-a", compNameBuild, filename]);
+                                    }
+                                });
+                            }
                             //disc format gets choppy after adding files? this forces it back to 80track format.
                             if (doDisks) {
                                 execSync('bbcim.exe', ["-80", compNameBuild]);
@@ -213,6 +215,8 @@ csvtojson({
                 let basicLineNumber = 810;
                 let dataChunk = "";
                 let dataBit = "";
+                let volumeLabel = "";
+
                 volume.content.all.forEach(gameData => {
                     // console.log(gameData.title);
                     if(gameData.menutitle) {
@@ -226,6 +230,11 @@ csvtojson({
                 dataChunk = dataChunk + basicLineNumber + "ENDPROC\n";
 
                 // console.log(themeToUse);
+                if(compilationVolumes.length > 1) {
+                    volumeLabel = ' Volume ' + numberArray[volume.volume];
+                } else {
+                    volumeLabel = '';
+                }
 
                 basicOutput = basicOutput.replace('{name}', compilation.title);
                 basicOutput = basicOutput.replace('{background}', themeToUse.background);
@@ -233,7 +242,7 @@ csvtojson({
                 basicOutput = basicOutput.replace('{text1}', themeToUse.text1);
                 basicOutput = basicOutput.replace('{text2}', themeToUse.text2);
                 basicOutput = basicOutput.replace('{gameCount}', compGameCount);
-                basicOutput = basicOutput.replace('{volumeTitle}', ' Volume ' + numberArray[volume.volume]);
+                basicOutput = basicOutput.replace('{volumeTitle}', volumeLabel);
                 basicOutput = basicOutput.replace('{data}', dataChunk);
 
                 fs.writeFileSync(tempDir + compilationTitleCleaned + volume.volume + '!MENU.bas', basicOutput, 'utf-8');
@@ -252,9 +261,11 @@ csvtojson({
                         } else {
                             compilationFilenameNumber = volume.volume;
                         }
-                        execSync('bbcim.exe', ["-interss", "sd", exportDir + compilationTitleCleaned + volume.volume + "_0.ssd", exportDir + compilationTitleCleaned + volume.volume + "_2.ssd", exportDir + compilationTitleCleaned + compilationFilenameNumber + ".dsd"]);
+                        execSync('bbcim.exe', ["-interss", "sd", exportDir + compilationTitleCleaned + volume.volume + "_0.ssd", exportDir + compilationTitleCleaned + volume.volume + "_2.ssd", exportDir + compilationTitleCleaned + "_" + compilationFilenameNumber + ".dsd"]);
                         fs.unlinkSync(exportDir + compilationTitleCleaned + volume.volume + "_0.ssd");
                         fs.unlinkSync(exportDir + compilationTitleCleaned + volume.volume + "_2.ssd");
+                        execSync('bbcim.exe', ["-min", exportDir + compilationTitleCleaned + "_" + compilationFilenameNumber + ".dsd"]);
+                        fs.unlinkSync(exportDir + compilationTitleCleaned + "_" + compilationFilenameNumber + ".dsd~");
 
                     }
                 } else if (fs.existsSync(exportDir + compilationTitleCleaned + volume.volume + "_0.ssd")) {
@@ -264,6 +275,8 @@ csvtojson({
                         compilationFilenameNumber = volume.volume;
                     }
                     fs.renameSync(exportDir + compilationTitleCleaned + volume.volume + "_0.ssd", exportDir + compilationTitleCleaned + compilationFilenameNumber + ".ssd");
+                    execSync('bbcim.exe', ["-min", exportDir + compilationTitleCleaned + compilationFilenameNumber + ".ssd"]);
+                    fs.unlinkSync(exportDir + compilationTitleCleaned + compilationFilenameNumber + ".ssd~");
                 }
             });
 

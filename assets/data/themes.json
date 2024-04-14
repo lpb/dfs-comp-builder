@@ -1,0 +1,1666 @@
+[
+  {
+    "name": "4thDimension",
+    "background": 132,
+    "foreground": 135,
+    "text1": 134,
+    "text2": 132,
+    "numeric": false
+  },
+  {
+    "name": "A&F",
+    "background": 133,    
+    "foreground": 134,
+    "text1": 134,
+    "text2": 135,
+    "numeric": false
+  },
+  {
+    "name": "Aardvark",
+    "background": 129,    
+    "foreground": 130,
+    "text1": 131,
+    "text2": 130,
+    "numeric": false
+  },
+  {
+    "name": "Acornsoft",
+    "background": 129,
+    "foreground": 131,
+    "text1": 131,
+    "text2": 130,
+    "numeric": false
+  },
+  {
+    "name": "AddictiveGames",
+    "background": 129,    
+    "foreground": 130,
+    "text1": 131,
+    "text2": 130,
+    "numeric": false
+  },
+  {
+    "name": "AdventureInternational",
+    "background": 131,
+    "foreground": 133,
+    "text1": 131,
+    "text2": 133,
+    "numeric": false
+  },
+  {
+    "name": "AdventureSoftUK",
+    "background": 131,
+    "foreground": 133,
+    "text1": 131,
+    "text2": 133,
+    "numeric": false
+  },
+  {
+    "name": "Alligata",
+    "background": 130,
+    "foreground": 129,
+    "text1": 129,
+    "text2": 130,
+    "numeric": false
+  },
+  {
+    "name": "AlternativeSoftware",
+    "background": 130,
+    "foreground": 129,
+    "text1": 131,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Amcom",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Apex",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "ArgusPressSoftware",
+    "background": 135,
+    "foreground": 132,
+    "text1": 135,
+    "text2": 132,
+    "numeric": false
+  },
+  {
+    "name": "Artic&UnicornSoftware",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Atarisoft",
+    "background": 129,    
+    "foreground": 130,
+    "text1": 131,
+    "text2": 130,
+    "numeric": false
+  },
+  {
+    "name": "Atlantis",
+    "background": 130,    
+    "foreground": 129,
+    "text1": 129,
+    "text2": 130,
+    "numeric": false
+  },
+  {
+    "name": "Audiogenic",
+    "background": 130,
+    "foreground": 131,
+    "text1": 131,
+    "text2": 130,
+    "numeric": false
+  },
+  {
+    "name": "BBCSoft",
+    "background": 132,
+    "foreground": 135,
+    "text1": 135,
+    "text2": 131,
+    "numeric": false
+  },
+  {
+    "name": "Beebug",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Betasoft",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "BevanTechnology",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "BignoseSoftware",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "BlueRibbon",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "BrainboxSoftware",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Brassington",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Britannia",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "BritishTelecom",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "BubbleBus",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "BugByte",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "CCS",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "CDS",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Ceefax",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "CentralComputing",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "CenturyCommunications",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Chalksoft",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "CJE",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "ClemoesSoftware",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Coda",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Codemasters",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "COICSoftware",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Colisoft",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Collins",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Command",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "ComputerConcepts",
+    "background": 134,
+    "foreground": 132,
+    "text1": 129,
+    "text2": 131,
+    "numeric": false
+  },
+  {
+    "name": "Comsoft",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Cosma",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "CRL",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Cronosoft",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "DACC",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "DatabasePublications",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "DatabaseSoftware",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Delta4",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "DesignPeopleSoftware",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "DeskflairGames",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "DigitalFantasia",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "DkTronics",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "DoctorSoft",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Dollarsoft",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Domark",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Durell",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "DWGore",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Dynabyte",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "EdgeComputersLtd",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Elite",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Empire",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "EnglishSoftware",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "EpicAdventures",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "EpsilonSoftware",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "EuroByte",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "EverissSoftware",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Firebird",
+    "background": 135,
+    "foreground": 129,
+    "text1": 131,
+    "text2": 133,
+    "numeric": false
+  },
+  {
+    "name": "FirstByteSoftware",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "FirstStar",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Flight19Software",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "FlightdeckSoftware",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Foilkade",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "FuturaSoftware",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "GamesMachine",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "GanymedeSystems",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "GarlandComputing",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "GEM",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Gemini",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "GlengarySoft",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "GoDax",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Goldstar",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Golem",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "GraphicResearch",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "GremlinGraphics",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "H&HSoftware",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Hessel",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "HewsonConsultants",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "HeyleySoftware",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "HighlightSoftware",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "HillMacGibbon",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "HiTech",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Hollsoft",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Hopesoft",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "HSoft",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Icon",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "IJKSoftware",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Imagine",
+    "background": 129,
+    "foreground": 134,
+    "text1": 130,
+    "text2": 133,
+    "numeric": false
+  },
+  {
+    "name": "Impact",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Incentive",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "InspiringSoftware",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Interceptor",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "ISPMarketingLtd",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "IxionSoftware",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "JSDSoftware",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "KansasCitySystems",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "KaydeeSoftware",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "KayEss",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Kempston",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "KryptonForce",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Labyrinth",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Larsoft",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "LCL",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "LeeSoftware",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Level9",
+    "background": 132,
+    "foreground": 134,
+    "text1": 135,
+    "text2": 134,
+    "numeric": false
+  },  
+  {
+    "name": "LeisureGenius",
+    "background": 130,
+    "foreground": 129,
+    "text1": 131,
+    "text2": 135,
+    "numeric": false
+  },
+  {
+    "name": "LivewireSoftwareLtd",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "LogicSystems",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Logotron",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Lothlorien",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "LVL",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Macsen",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "MadRabbitSoftware",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Magus",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Martech",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Mastertronic",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "MelborneHouse",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "MGBSoftware",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Microbyte",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Microdeal",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Microgame",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Micropower",
+    "background": 132,
+    "foreground": 130,
+    "text1": 133,
+    "text2": 131,
+    "numeric": false
+  },
+  {
+    "name": "Microtest",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Mirrorsoft",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "ModularResourcesSoftware",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Molymerx",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "MosaicPublishingLtd",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "MRMSoftware",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Nebulae",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Niblesoft",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "OakleafComputers",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "OakSoftware",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "OasisSoftware",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Ocean",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "OdysseySoftware",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "OIC",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Omen",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Optima",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "OptyxSoftware",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Opus",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Orbit",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Orion",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Pace",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "PaeanSystems",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Palace",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Pavillion",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Peaksoft",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Players",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Postern",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "PowerHouse",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Quest",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Quicksilva",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Robico",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Romik",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Senator",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Shards",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "SherstonSoftware",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "ShibumiSoft",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "SigmaSoft",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Silverbird",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Silverlind",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Silversoft",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Simonsoft",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Softek",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "SoftRockSoftware",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Softspot",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "SoftwareInvasion",
+    "background": 131,
+    "foreground": 129,
+    "text1": 135,
+    "text2": 131,
+    "numeric": false
+  },
+  {
+    "name": "SoftwareProjects",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "SolarSoft",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "SouthwaySoftware",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "SquirrelSoftware",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Starcade",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Statasoft",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "StormSoftware",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "SuperiorSoftware",
+    "foreground": 131,
+    "background": 132,
+    "text1": 134,
+    "text2": 135,
+    "numeric": false
+  },
+  {
+    "name": "SuperiorSoftware&Acornsoft",
+    "background": 129,
+    "foreground": 131,
+    "text1": 135,
+    "text2": 131,
+    "numeric": false
+  },
+  {
+    "name": "Swift",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "System3",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "TalentComputerSystems",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "TDS",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Thor",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Topologika",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "TopTen",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "TriffidSoftwareResearch",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Tynesoft",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Ubik",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Ultimate",
+    "background": 129,
+    "foreground": 131,
+    "text1": 130,
+    "text2": 134,
+    "numeric": false
+  },
+  {
+    "name": "UnicornSoftware",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "USGold",
+    "background": 134,
+    "foreground": 132,
+    "text1": 130,
+    "text2": 131,
+    "numeric": false
+  },
+  {
+    "name": "Viper",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "VirginGames",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "Visions",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "VoyagerSoftware",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "WatfordElectronics",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "WhitePanther",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  },
+  {
+    "name": "default",
+    "background": 132,
+    "foreground": 129,
+    "text1": 132,
+    "text2": 129,
+    "numeric": false
+  }
+]

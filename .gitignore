@@ -1,5 +1,7 @@
 /node_modules
 /assets/disks
 /assets/extract
+/assets/basic
 /export
 /temp
+/_archive

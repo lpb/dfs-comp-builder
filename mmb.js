@@ -17,10 +17,11 @@ let themes = [];
 let gotekDiskNames = "DSKA";
 let dataChunk = "";
 let basicLineNumber = 810;
-let compilationNumber = 1;
+let slotNumber = 1;
 
 let compDiskStart = 001;
-let compDiskEnd = 192;
+let compDiskEnd = 256;
+let maxSlots = 288;
 
 const zeroPad = (num, places) => String(num).padStart(places, '0');
 
@@ -33,6 +34,9 @@ themes = JSON.parse(themesData);
 //read disks.json created by extractdisks.js
 let disksData = fs.readFileSync(disksJsonFile, 'utf8', );
 disksJsonData = JSON.parse(disksData);
+
+//create new mmb file
+execSync('mmbexplorer.exe', ["create", exportDir + "reMastered.mmb", maxSlots]);
 
 //read in config files for desired publisher combinations
 csvtojson({
@@ -49,7 +53,7 @@ csvtojson({
 
             //get entries for specific compilation
             let compFilters = {
-                compilation: i.toString()
+                slot: i.toString()
             };
             thisCompilation = compilationJsonData.filter(item => Object.keys(compFilters).every(key => item[key] === compFilters[key]));
             // console.log(thisCompilation);
@@ -57,8 +61,8 @@ csvtojson({
             thisCompilation.forEach(thisGame => {
                 if(thisGame.type!='dsd') { //temp HACK for dsd images
                     //gather info for compilation disk
-                    compNameBuild = gotekDiskNames + zeroPad(thisGame.compilation, 4);
-                    thisDisk = exportDir + compNameBuild + "_" + thisGame.side + ".ssd";
+                    compNameBuild = gotekDiskNames + zeroPad(thisGame.slot, 4);
+                    thisDisk = exportDir + compNameBuild + ".ssd";
 
                     //find games from this compilation
                     let gameFilters = {
@@ -69,6 +73,7 @@ csvtojson({
 
                     //move game files to compilation disk
                     if (gameData) {
+                        // console.log(gameData);
                         gameData.allFiles.forEach(filename => {
                             if (doDisks) {
                                 execSync('bbcim.exe', ["-a", thisDisk, filename]);
@@ -86,24 +91,10 @@ csvtojson({
             // console.log(dataChunk);
 
             compNameBuild = gotekDiskNames + zeroPad(i, 4);
-            if (doDisks) {
-                execSync('bbcim.exe', ["-a", exportDir + compNameBuild + "_0.ssd", "./assets/basic/din/$.!BOOT"]);
-                // execSync('bbcim.exe', ["-a", exportDir + compNameBuild + "_0.ssd", "./assets/basic/din/$.din"]);
-            }
 
-            //combine both (if exists) ssd into dsd
-            if (fs.existsSync(exportDir + compNameBuild + "_0.ssd") && fs.existsSync(exportDir + compNameBuild + "_2.ssd")) {
-                if (doDisks) {
-                    execSync('bbcim.exe', ["-interss", "sd", exportDir + compNameBuild + "_0.ssd", exportDir + compNameBuild + "_2.ssd", exportDir + compNameBuild + ".dsd"]);
-                    fs.unlinkSync(exportDir + compNameBuild + "_0.ssd");
-                    fs.unlinkSync(exportDir + compNameBuild + "_2.ssd");
-                    execSync('bbcim.exe', ["-min", exportDir + compNameBuild + ".dsd"]);
-                    fs.unlinkSync(exportDir + compNameBuild + ".dsd~");
-                }
-            } else if (fs.existsSync(exportDir + compNameBuild + "_0.ssd")) {
-                fs.renameSync(exportDir + compNameBuild + "_0.ssd", exportDir + compNameBuild + ".ssd");
-                execSync('bbcim.exe', ["-min", exportDir + compNameBuild + ".ssd"]);
-                fs.unlinkSync(exportDir + compNameBuild + ".ssd~");
+            if (doDisks) {
+                execSync('bbcim.exe', ["-a", exportDir + compNameBuild + ".ssd", "./assets/basic/din/$.!BOOT"]);
+                execSync('mmbexplorer.exe', ["add", exportDir + "reMastered.mmb", exportDir + compNameBuild + ".ssd", i]);
             }
 
         }

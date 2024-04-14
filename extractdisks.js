@@ -52,6 +52,8 @@ files.forEach(publisher => {
                 var keptSizes = [];
                 var totalGameSize = 0;
 
+                // console.log(extractedFiles);
+
                 extractedFiles.forEach(exfilename => {
                     //we don't want BOOT or cat files
                     if (exfilename.endsWith('.cat')) {

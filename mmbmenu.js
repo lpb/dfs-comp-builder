@@ -35,7 +35,7 @@ themes = JSON.parse(themesData);
 //read in config files for desired publisher combinations
 csvtojson({
         noheader: true,
-        headers: ['title', 'publisher', 'program', 'compilation', 'side', 'method', 'menutitle','NIU','shortname']
+        headers: ['title', 'publisher', 'program', 'compilation', 'side', 'method', 'menutitle','NIU','shortname','slot']
     })
     .fromFile(datPubFile)
     .then((jsonObj) => {
@@ -63,9 +63,9 @@ csvtojson({
 
             thisPublisher.forEach(publisherGame => {
                 if(publisherGame.menutitle) {
-                    dataBit = "DATA " + publisherGame.menutitle + "," + publisherGame.program + "," + publisherGame.compilation + "," + publisherGame.side + "," + publisherGame.method;
+                    dataBit = "DATA " + publisherGame.menutitle + "," + publisherGame.program + "," + publisherGame.slot + "," + "," + publisherGame.method;
                 } else {
-                    dataBit = "DATA " + publisherGame.title + "," + publisherGame.program + "," + publisherGame.compilation + "," + publisherGame.side + "," + publisherGame.method;
+                    dataBit = "DATA " + publisherGame.title + "," + publisherGame.program + "," + publisherGame.slot + "," + "," + publisherGame.method;
                 }
                 dataChunk += basicLineNumber + dataBit + "\n";
                 basicLineNumber += 10;
@@ -88,7 +88,7 @@ csvtojson({
             }
 
             //generate menu program basic
-            let basicOutput = fs.readFileSync(assetDir + 'basic/gotek/!MENU.bas', 'utf-8');
+            let basicOutput = fs.readFileSync(assetDir + 'basic/gotek/!MENUMMB.bas', 'utf-8');
             dataChunk = dataChunk + basicLineNumber + "ENDPROC\n";
             let publisherName = publisher.replaceAll(' ', '').replaceAll('\'', '').substring(0, 6) + publisher.slice(-1);
             // console.log(publisherName);
@@ -117,9 +117,8 @@ csvtojson({
 
 
         // build catalogue disks
-        let menuDiskCompStart = 900;
-        let menuDiskMaxSideFiles = 28;
-        let menuDiskMaxFiles = 56;
+        let menuDiskCompStart = 272;
+        let menuDiskMaxFiles = 28;
         let diskSide = 0;
         let diskSideCount = 0;
         let compNameBuild = gotekDiskNames + zeroPad(menuDiskCompStart, 4);
@@ -130,14 +129,9 @@ csvtojson({
 
         let files = fs.readdirSync('./').filter(fn => fn.startsWith('M.'));
         let discFileCount = 0;
-        console.log(files.length);
+        // console.log(files.length);
         files.forEach(filename => {
             discFileCount++;
-            diskSideCount++;
-            if (diskSideCount > menuDiskMaxSideFiles) {
-                diskSide = diskSide == 0 ? 2 : 0;
-                diskSideCount = 0;
-            }
             if (discFileCount > menuDiskMaxFiles) {
                 discFileCount = 0;
                 diskSideCount = 0;
@@ -162,6 +156,7 @@ csvtojson({
         let diskCompFiles = fs.readdirSync(exportDir).filter(fn => fn.endsWith('.ssd'));
         diskCompFiles.forEach(filename => {
             let partialFilename = filename.slice(0, -6);
+            let slotNumber = partialFilename.slice(-3);
 
             if ((fs.existsSync(exportDir + partialFilename + "_0.ssd"))) {
                 if (doDisks) {
@@ -174,11 +169,10 @@ csvtojson({
                     execSync('bbcim.exe', ["-interss", "sd", exportDir + partialFilename + "_0.ssd", exportDir + partialFilename + "_2.ssd", exportDir + partialFilename + ".dsd"]);
                     fs.unlinkSync(exportDir + partialFilename + "_0.ssd");
                     fs.unlinkSync(exportDir + partialFilename + "_2.ssd");
-
-
                 }
             } else if (fs.existsSync(exportDir + partialFilename + "_0.ssd")) {
                 fs.renameSync(exportDir + partialFilename + "_0.ssd", exportDir + partialFilename + ".ssd");
+                execSync('mmbexplorer.exe', ["add", exportDir + "reMastered.mmb", exportDir + partialFilename + ".ssd", slotNumber]);
             }
 
         });
@@ -198,7 +192,7 @@ csvtojson({
             return a.publisher - b.publisher
         });
         compilationData.forEach(pubData => {
-            console.log(pubData);
+            // console.log(pubData);
             mdataBit = "DATA " + pubData.shortname + "," + pubData.filename + "," + pubData.diskNumber + "," + pubData.diskSide;
             mdataChunk += mbasicLineNumber + mdataBit + "\n";
             mbasicLineNumber += 10;
@@ -209,7 +203,7 @@ csvtojson({
 
         mbasicOutput = mbasicOutput.replace('{name}', "BBC Games");
         mbasicOutput = mbasicOutput.replace('{background}', 129);
-        mbasicOutput = mbasicOutput.replace('{foreground}', 131);
+        mbasicOutput = mbasicOutput.replace('{foreground}', 131);6
         mbasicOutput = mbasicOutput.replace('{text1}', 135);
         mbasicOutput = mbasicOutput.replace('{text2}', 134);
         mbasicOutput = mbasicOutput.replace('{gameCount}', compilationData.length);
